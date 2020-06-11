@@ -1,3 +1,3 @@
 # PasswordGenerator
 
-This web application is designed using HTML, CSS, and JavaScript to generate random passwords based on user input.
+This web application is designed using HTML, CSS, and JavaScript to generate a random password based on user input.
