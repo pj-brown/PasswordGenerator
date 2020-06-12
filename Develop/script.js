@@ -1,16 +1,35 @@
+// USE CASES
+// 1) - USER LOADS THE PAGE
+  // HTML/CSS Loads 
+
+// 2) - USER SELECTS 'GENERATE PASSWORD' BUTTON
+  // Separate prompts are given to the user to include in the password for:
+    // a) - password length
+    // b) - lowercase
+    // c) - uppercase
+    // d) - numbers
+    // e) - special characters
+  // Password length must be chosen + one additional prompt
+  // If no or only one selections are made (loop back to beginning of prompts?)
+
+// 3) - PASSWORD VARIABLES ARE SELECTED - SCRIPT GENERATES PASSWORD BASED ON USER SELECTIONS
+  // Password is given via alert OR
+  // written to the page
+
+// VARIABLES
+  // Declare variables for storing the following:
+    // a) - password length
+
+    // b) - lowercase
+    // c) - uppercase
+    // d) - numbers
+    // e) - special characters
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-// Need variables for lowercase, uppercase, numbers, and special characters
-var lowerCase = []
-var upperCase = []
-var numbers = []
-var specialChars = []
-var passwordLength = []
 
-
-
-
-// Write password to the #password input
+// FUNCTIONS
+// Write password to the #password input (writePassword function responsible for choosing a random password and rendering it to the page [as a string? or is a variable determined by the function?])
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
@@ -18,19 +37,12 @@ function writePassword() {
   passwordText.value = password;
 
 }
-// Generate 5 prompts for user - password length, lowercase, uppercase, numeric, and/or special char
-passwordLength prompt("Please choose password length between 8 and 128 characters.")
-prompt("Include lowercase letters?")
-prompt("Include uppercase letters?")
-prompt("Include numbers?")
-prompt("Include special characters?")
-
-// Need if/else statements for user prompt selections 
-
-
-
+// EVENT LISTENERS
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
 
-// !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+
+
+
+
