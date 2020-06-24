@@ -2,4 +2,4 @@
 
 This web application is designed using HTML, CSS, and JavaScript to generate a random password based on user input.
 
-https://pj-brown.github.io/PasswordGenerator/
+Try for yourself here: https://pj-brown.github.io/PasswordGenerator/
